@@ -1,0 +1,17 @@
+pipelines:
+  default:
+    - parallel:
+        - step :
+            name:Build and Test
+            caches:
+              - node
+            script :
+              - npm install
+              - npm test
+        - step:
+            name : Code Listing
+            script :
+              - npm install eslint
+              - npx eslint .
+            caches :
+              - node
