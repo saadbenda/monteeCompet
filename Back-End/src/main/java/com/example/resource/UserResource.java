@@ -1,5 +1,5 @@
-package resource;
 
+package com.example.resource;
 
 import model.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +11,6 @@ import java.util.List;
 @RequestMapping("/rest")
 @RestController()
 public class UserResource {
-
 
     @GetMapping(value = "/users", produces = "application/json")
     public User getUsers(){

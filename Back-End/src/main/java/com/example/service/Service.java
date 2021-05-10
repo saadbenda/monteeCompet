@@ -1,4 +1,4 @@
-package service;
+package com.example.service;
 
 
 import org.apache.spark.SparkConf;
