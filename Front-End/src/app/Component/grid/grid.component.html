@@ -1,0 +1,14 @@
+<div class="p-grid">
+  <div class="p-col-4 p-mx-auto"><p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City"
+                                             optionLabel="name" [showClear]="true"></p-dropdown></div>
+  <div class="p-col-4 p-mx-auto">
+    <button pButton pRipple type="button" label="Dashboard" class="p-button-raised p-button-text" (click)= "onClick()" routerLink="/dashboard/{{selectedCity.code}}"></button>
+  </div>
+  <div class="p-col-4">
+    <p-card header="header">
+      <button pButton pRipple type="button" label="Secondary" icon="pi pi-check" iconPos="left" class="p-button-rounded p-button-secondary">
+      </button>
+    </p-card>
+
+  </div>
+</div>
