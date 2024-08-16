@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-neo4j</artifactId>
-            <version>5.0.1.RELEASE</version>
+            <version>7.0.0</version>
         </dependency>
 
         <dependency>
